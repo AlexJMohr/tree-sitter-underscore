@@ -1,0 +1,13 @@
+==============
+output escaped
+==============
+
+<%- foo.bar.baz %>
+
+---
+
+(template
+  (content)
+  (output
+    (code))
+  (content))

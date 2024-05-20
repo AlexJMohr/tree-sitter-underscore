@@ -1,0 +1,50 @@
+{
+  "name": "tree-sitter-underscore",
+  "version": "0.1.0",
+  "description": "underscore.js template grammar for tree-sitter",
+  "repository": "gitub:AlexJMohr/tree-sitter-underscore",
+  "license": "MIT",
+  "author": "Alex Mohr <mohralexj@gmail.com>",
+  "maintainers": [
+    "Alex Mohr <mohralexj@gmail.com>"
+  ],
+  "main": "bindings/node",
+  "types": "bindings/node",
+  "scripts": {
+    "install": "node-gyp-build",
+    "parse": "tree-sitter parse",
+    "build": "tree-sitter generate --no-bindings",
+    "prebuildify": "prebuildify --napi --strip",
+    "test": "tree-sitter test"
+  },
+  "dependencies": {
+    "node-addon-api": "^7.1.0",
+    "node-gyp-build": "^4.8.0"
+  },
+  "peerDependencies": {
+    "tree-sitter": "^0.21.0"
+  },
+  "peerDependenciesMeta": {
+    "tree_sitter": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.22.6",
+    "prebuildify": "^6.0.0"
+  },
+  "files": [
+    "grammar.js",
+    "binding.gyp",
+    "prebuilds/**",
+    "bindings/node/*",
+    "queries/*",
+    "src/**"
+  ],
+  "tree-sitter": [
+    {
+      "scope": "source.underscore",
+      "injection-regex": "^underscore$"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+=============
+content 1
+=============
+
+Just some text
+
+---
+
+(template
+  (content))

@@ -1,0 +1,9 @@
+====
+html
+====
+
+<div>foo</div>
+
+---
+(template
+  (content))

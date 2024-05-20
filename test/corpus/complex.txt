@@ -1,0 +1,32 @@
+=======
+complex
+=======
+
+<div>
+  <% if (foo) { %>
+    <p>yes, this is foo</p>
+  <% } else { %>
+    <p>it isn't foo, it's <%= bar %></p>
+  <% } %>
+  <p>and an escape for good measure: <%- baz %></p>
+</div>
+
+---
+
+(template
+  (content)
+  (directive
+    (code))
+  (content)
+  (directive
+    (code))
+  (content)
+  (output
+    (code))
+  (content)
+  (directive
+    (code))
+  (content)
+  (output
+    (code))
+  (content))

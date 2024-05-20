@@ -1,0 +1,13 @@
+======================
+output between content
+======================
+
+<div><%= hello %></div>
+
+---
+
+(template
+  (content)
+  (output
+    (code))
+  (content))

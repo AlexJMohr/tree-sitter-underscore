@@ -1,0 +1,13 @@
+=========
+directive
+=========
+
+<% foo %>
+
+---
+
+(template
+  (content)
+  (directive
+    (code))
+  (content))

@@ -1,0 +1,13 @@
+==========
+output raw
+==========
+
+<%= foo %>
+
+---
+
+(template
+  (content)
+  (output
+    (code))
+  (content))

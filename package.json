@@ -43,7 +43,11 @@
   ],
   "tree-sitter": [
     {
-      "scope": "source.underscore",
+      "scope": "text.html.underscore",
+      "file-types": [
+        "underscore"
+      ],
+      "injections": "queries/injections.scm",
       "injection-regex": "^underscore$"
     }
   ]
